@@ -1,0 +1,42 @@
+in terminal
+
+// how to know if i have git on my computer
+$ git --version
+
+// copy repository in computer
+$ cd FOLDER I WANT TO STORE DIRECTORY IN
+$ git clone https://github.com/REPOSITORY_URL
+// now there is a new folder there from the github
+
+$ cd https://github.com/REPOSITORY_URL
+$ ls
+$ cat test1.txt
+
+// make new file 
+$ vi test2.txt
+// dialog box pops up to write stuff, then save
+$ cat test2.txt
+
+// tells latest modifications to files.
+// if there are changes, asks you to commit
+$ git status
+
+// how to add file to pipeline (individually)
+$ git add test2.txt
+
+$ git status
+// shows file is added, but not commited yet
+
+$ git commit -m "added test2.txt"
+$ git status
+--> nothing to commit, working tree clean
+
+------------
+$ git push
+// put to github ??
+
+------------
+Now pulling
+// we made a new file on github.com repo, so it is not yet in computer. we're going to pull it.
+
+$ git pull
